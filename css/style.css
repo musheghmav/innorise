@@ -1,0 +1,1516 @@
+html, body, #main-wrapper, #left-side, #right-side {
+    height:100%;
+}
+
+body {
+    overflow-y: scroll;
+    font-family: "Open Sans";
+}
+
+/*header*/
+
+body > header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 90px;
+    position: fixed;
+    background: white;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.08);
+     box-shadow: 0 1px 1px rgba(0,0,0,0.08);
+    transition: background-color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out;
+     -webkit-transition: background-color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out;
+}
+
+#header * {
+    height: 100%;
+}
+
+#main-container, .page {
+    padding: 90px 0 50px !important;
+}
+
+h1, .nav-menu > li a, .csd-4 h2 {
+    color: #234a73;
+    position: relative;
+}
+
+.nav-menu-item {
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.nav-menu-item a {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-menu-item a:hover, .nav-menu-item a:focus {
+    outline: none;
+    color: #ffb40c;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.nav-menu-item a::after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.nav-menu-item a:hover::after {
+    width: 100%;
+    transition-delay: 0.2s;
+    background-color: #ffb40c;
+}
+
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 60px;
+}
+
+.left-side {
+    float: left;
+}
+
+.right-side {
+    float: right;
+}
+
+.nav-menu {
+    /*line-height: 90px;*/
+}
+
+.nav-menu > li {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.logo {
+    float: left;
+    width: 139px;
+    height: 90px;
+    background: url(../images/logo.png) center no-repeat;
+    background-size: 138px;
+}
+
+/*header image*/
+.header-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*what we do*/
+.full-width {
+    margin-top: 65px;
+}
+.section-header {
+    text-align: center;
+}
+
+.section-description {
+    color: #555;
+    padding: 20px 20px 20px 20px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.we-do .description-icon {
+    width: 60px;
+    height:60px;
+    float: left;
+}
+
+.we-do .icon1 {
+    background: url(../images/Row1_N1.png) center no-repeat;
+    background-size: 60px;
+}
+.we-do .icon2 {
+    background: url(../images/Row1_N2.png) center no-repeat;
+    background-size: 34px;
+}
+.we-do .icon3 {
+    background: url(../images/Row1_N3.png) center no-repeat;
+    background-size: 60px;
+}
+.we-do .icon4 {
+    background: url(../images/Row1_N4.png) center no-repeat;
+    background-size: 60px;
+}
+.we-do .icon5 {
+    background: url(../images/Row1_N5.png) center no-repeat;
+    background-size: 60px;
+}
+.we-do .icon6 {
+    background: url(../images/Row1_N6.png) center no-repeat;
+    background-size: 60px;
+}
+
+.we-do .description {
+    margin-left: 70px;
+    line-height: 20px;
+}
+
+.we-do .col-md-4, .with-us .col-md-12 {
+    margin-top: 25px;
+}
+
+.description h2, .description h2, .csd-3 h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.we-do .description h2, .with-us .description h2 {
+    color: #ffb40c;
+}
+
+.description p, .description p, .csd-3 p {
+    color: grey;
+    font-size: 15px;
+    padding: 10px 0;
+    line-height: 20px;
+}
+/*
+.project-container .col {
+    height: 250px;
+    background-color: red;
+}*/
+
+/*work with us*/
+.project-details {
+    margin-left: 70px;
+    height: 70px;
+}
+.project-details h2 {
+    color: #ffb40c;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 25px;
+
+}
+.project-details p {
+    text-align: center;
+    padding-top: 20px
+    padding-bottom : 250px;
+    color: grey;
+}
+.with-us .description-icon {
+    width: 70px;
+    height:70px;
+    float: left;
+    /*background: url(../images/large_icon.png) center no-repeat;*/
+    background-size: contain;
+}
+
+.with-us .icon1 {
+    background: url(../images/Row2_N1.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .icon2 {
+    background: url(../images/Row2_N2.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .icon3 {
+    background: url(../images/Row2_N3.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .icon4 {
+    background: url(../images/Row2_N4.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .icon5 {
+    background: url(../images/Row2_N5.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .icon6 {
+    background: url(../images/Row2_N6.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .icon7 {
+    background: url(../images/Row2_N7.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .icon8 {
+    background: url(../images/Row2_N8.png) center no-repeat;
+    background-size: contain;
+}
+
+.with-us .description {
+    margin-left: 90px;
+    line-height: 15px;
+}
+
+.dev-app-client {
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: #234a73;
+}
+
+.dev-app-client p {
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+.dev-app-client .col-md-4 {
+    padding-top: 50px;
+}
+.dev-app-client h1 {
+    color: white;
+    font-size: 60px;
+}
+
+/*send message form*/
+.red-borders {
+    border: 1px solid red !important;
+}
+
+.send-msg form {
+    width: 650px;
+    margin: 0 auto;
+    max-width: 100%;
+    font-size: 14px;
+    padding: 20px 0 0;
+}
+
+.send-msg form input {
+    height: 40px;
+}
+
+.send-msg form label {
+    width: 100%;
+    color: grey;
+    font-weight: 600;
+    margin: 10px 0 20px;
+}
+
+.send-msg form input, .send-msg form textarea, #close-popup {
+    width: 100%;
+    outline: none;
+    display: block;
+    margin-top: 5px;
+    border: 1px solid #d6d6d6;
+}
+
+.send-msg form input[type=button], #close-popup {
+    width: 150px;
+    color: white;
+    font-weight: 600;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    background-color: #02b9d4;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.send-msg form input[type=submit]:hover {
+    background-color: #333;
+}
+
+#message {
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.send-msg-form label input, .send-msg-form label textarea {
+    padding: 20px;
+    color: #555555;
+    font-weight: initial;
+}
+
+.send-msg-form textarea {
+    resize: none;
+}
+
+/*message sent popup*/
+/*popup css*/
+.popup {
+    display: none;
+}
+
+#close-popup {
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.popup p {
+    margin: 15px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.my-popup {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(74, 80, 102, 0.5);
+}
+
+.my-popup > .popup-inside {
+    width: 500px;
+    padding: 25px;
+    display: flex;
+    overflow: auto;
+    max-height: 100%;
+    background: white;
+    border-radius: 8px;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.25);
+}
+
+/*footer*/
+footer {
+    color: white;
+    background: #234a73;
+    padding: 40px 0 10px;
+}
+
+footer p {
+    color: #a7b7c7;
+}
+
+footer a, footer a:focus {
+    color: white;
+}
+
+footer a:hover {
+    color: #ffb40c;
+}
+
+.footer-about-us {
+    width: 450px;
+    font-size: 13px;
+    padding: 5px;
+    line-height: 18px;
+}
+
+.address {
+    padding: 15px 0;
+}
+
+.address p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.social-icons-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+.social-icons-wrap .fab{
+    margin: 5px;
+    width: 36px;
+    line-height: 36px;
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    color: rgba(255,255,255,0.7)!important;
+    margin-top: 10px;
+}
+
+.social-icons-wrap i:hover {
+    color: #ffffff !important;
+}
+
+.footer-logo {
+    width: 160px;
+}
+
+.footer-text {
+    clear: both;
+    padding: 20px 5px;
+    font-size: 12px;
+}
+
+.location .fa {
+    font-size: 45px;
+    color: white;
+}
+
+/*Custom software development*/
+.csd .description h2, .csd-2 .description h2, .csd-3 h2 {
+    color: #234a73;
+    font-size: 19px;
+}
+
+.csd .description p, .csd-2 .description p, .csd-3 p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.csd .icon1 {
+    min-height: 170px;
+    background: url(../images/old/icon1.png) center no-repeat;
+    background-size: contain;
+}
+
+.csd .icon2 {
+    min-height: 170px;
+    background: url(../images/old/icon2.jpg) center no-repeat;
+    background-size: contain;
+}
+
+.csd .icon3 {
+    min-height: 170px;
+    background: url(../images/old/legacy_application.png) center no-repeat;
+    background-size: contain;
+}
+
+.csd .icon4 {
+    min-height: 170px;
+    background: url(../images/old/icon4.png) center no-repeat;
+    background-size: contain;
+}
+
+.csd-2 .description span {
+    margin: 0 7px;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.csd-2 .icon1 {
+    background: url(../images/row1_n1.png) center no-repeat;
+    background-size: contain;
+}
+
+.csd-2 .description .icon2 {
+    width: 64px;
+    height: 45px;
+    background: url(../images/icon2.png) center no-repeat;
+    background-size: contain;
+}
+
+.csd-2 .icon3 {
+    background: url(../images/row1_n2.png) center no-repeat;
+    background-size: contain;
+}
+
+.csd-2 .description h2 {
+    min-height: 45px;
+    line-height: 22px;
+}
+
+.csd-3 p {
+    text-align: left;
+}
+
+.csd-3 .icon {
+    float: left;
+    width: 45px;
+    height: 30px;
+    background: url(../images/old/check_sm.png) left no-repeat;
+    background-size: contain;
+}
+
+.csd-3 h2 {
+    line-height: 30px;
+}
+
+.csd-3 .row {
+    clear: both;
+}
+
+.csd-4 .description {
+    width: 90%;
+    margin: auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.csd-4 h2 {
+    font-size: 23px;
+    line-height: 45px;
+}
+
+.csd-4 p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.csd-4 .col-md-4 {
+    padding-top: 20px;
+}
+
+.our-projects h1 {
+	padding-bottom: 20px;
+}
+
+.our-projects h2 {
+    font-size: 26px;
+    line-height: 52px;
+}
+
+.our-projects p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.our-projects .bg-1, .our-projects .bg-2, .our-projects .bg-3 {
+    height: 400px;
+    padding: initial;
+}
+
+.our-projects .bg-1 {
+    background: url(../images/old/project1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.our-projects .bg-2 {
+    background: url(../images/old/project2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.our-projects .bg-3 {
+    background: url(../images/old/pexels-photo.jpeg) center no-repeat;
+    background-size: cover;
+}
+
+.bg-1 .project-desc {
+    background: rgba(35, 74, 115, 0.9);
+}
+
+.project-desc {
+    color: white;
+    height: 100%;
+    width: 400px;
+    float: right;
+    padding: 10px;
+    display: table;
+    text-align: center;
+}
+
+.project-desc > div {
+    display: table-cell;
+    padding-bottom: 15px;
+    vertical-align: middle;
+}
+
+.bg-2 .project-desc {
+    float: left;
+    background: rgba(3, 184, 211, 0.9);
+}
+
+.bg-3 .project-desc {
+    background: rgba(254, 179, 13, 0.9);
+}
+
+/*design for mobile*/
+
+.mobile-dev .description p {
+    font-size: 16px;
+}
+
+/*case-studies*/
+
+.cs-container {
+    height: 1000px;
+    position: relative;
+}
+
+.case-study {
+    background: center no-repeat;
+    background-size: 50%;
+    width: 49%;
+    height: 49%;
+    position: absolute;
+    background-color: #f5f5f7;
+    border: 1px #ececec solid;
+}
+
+.trymeet {
+    background-image: url(../images/trymeet-greyscale.svg);
+    top: 0;
+    left: 0;
+}
+
+.trymeet:hover {
+    background-image: url(../images/trymeet.svg);
+    transition: 0.5s;
+    background-color: #4b5167;
+}
+.yapapp {
+    background-image: url(../images/yapapp-greyscale.svg);
+    top: 0;
+    right: 0;
+    background-size: 50%
+}
+
+.yapapp:hover {
+    background-image: url(../images/yapapp.svg);
+    transition: 0.5s;
+    background-color: #377bdd;
+}
+
+.vone {
+    background-image: url(../images/vone-greyscale.svg);
+    background-size: 50%;
+    bottom: 0;
+    left: 0;
+}
+
+.vone:hover {
+    background-image: url(../images/vone.svg);
+    transition: 0.5s;
+}
+
+.kitkeys {
+    background-image: url(../images/kitkeys-greyscale.svg);
+    bottom: 0;
+    right: 0;
+}
+
+.kitkeys:hover {
+    background-image: url(../images/kitkeys.svg);
+    transition: 0.5s;
+    background-color: #353741;
+}
+
+.project{
+    width: 24%;
+    margin-left: 2px;
+    height: 200px;
+    display: inline-block;
+}
+.inlobby{
+    background: url(../images/inlobby.png) center no-repeat;
+    background-size: 80%;
+}
+.tomsarkgh{
+    background: url(../images/tomsarkgh.png) center no-repeat;
+    background-size: 80%;
+}
+.roostwise{
+    background: url(../images/roostwise.png) center no-repeat;
+    background-size: 80%;
+}
+.betconstruct{
+    background: url(../images/betconstruct.png) center no-repeat;
+    background-size: 80%;
+}
+.dalma{
+    background: url(../images/dalma.png) center no-repeat;
+    background-size: 60%;
+}
+.coachsulting{
+    background: url(../images/coachsulting.png) center no-repeat;
+    background-size: 80%;
+}
+.zappix{
+    background: url(../images/zappixblack.png) center no-repeat;
+    background-size: 60%;
+}
+.xrate{
+    background: url(../images/xrate.png) center no-repeat;
+    background-size: 60%;
+}
+.bottom{
+    border-bottom: 1px #ececec solid;
+}
+.right{
+    border-right: 1px #ececec solid;
+}
+
+.background {
+    height: 444px;
+    width: 100%;
+    margin-top: 90px;
+    position: relative;
+}
+
+#trymeet-container .background {
+    background-color: #4b5167;
+}
+#yapapp-container .background {
+    background-color: #377bdd;
+}
+#vone-container .background {
+    background-color: #f4f5f6;
+}
+#kitkeys-container .background {
+    background-color: #343740;
+}
+
+.left-background{
+    width: 300px;
+    height: 70%;
+    position: relative;
+    left: 15%;
+    top: 15%;
+}
+
+.background .section-description {
+    color: white;
+}
+#trymeet-container .background-logo {
+    background: url(../images/trymeet.svg) center no-repeat;
+    background-size: 90%;
+    height: 100px;
+    width: 100%;
+}
+#yapapp-container .background-logo {
+    background: url(../images/yapapp.svg) center no-repeat;
+    background-size: 75%;
+    height: 100px;
+    width: 100%;
+}
+#vone-container .background-logo {
+    background: url(../images/vone.svg) center no-repeat;
+    background-size: 85%;
+    height: 100px;
+    width: 100%;
+}
+#kitkeys-container .background-logo {
+    background: url(../images/kitkeys.svg) center no-repeat;
+    background-size: 90%;
+    height: 100px;
+    width: 100%;
+}
+
+#kitkeys-container .fa-app-store-ios {
+   left: 42%;
+}
+.fab {
+    color: #fff;
+    position: absolute;
+}
+#vone-container .fab {
+    color: #234a74;
+}
+#vone-container .background .section-description {
+    color: #234a74;
+}
+#vone-container ul {
+    color: grey;
+    margin-left: 50px;
+    line-height: 22px;
+}
+.fa-angle-right {
+    color: #E0990B;
+}
+
+.fa-google-play {
+    right: 60px;
+}
+.fa-app-store-ios {
+    left: 60px;
+}
+
+#trymeet-container .right-background {
+    height: 100%;
+    width: 590px;
+    position: absolute;
+    top: 0px;
+    right: 140px;
+    float: right;
+    background: url(../images/trymeet-banner.svg) center no-repeat;
+    background-size: 100%;
+}
+
+#yapapp-container .right-background {
+    height: 365px;
+    width: 612px;
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+    background: url(../images/yapapp-banner.svg) center no-repeat;
+    background-size: 100%;
+}
+
+#vone-container .right-background {
+    height: 358px;
+    width: 600px;
+    position: absolute;
+    float: right;
+    bottom: 0px;
+    right: 150px;
+    background: url(../images/vone-banner.svg) center no-repeat;
+    background-size: 80%;
+}
+
+#kitkeys-container .right-background {
+    height: 100%;
+    width: 720px;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    background: url(../images/kitkeys-banner.svg) center no-repeat;
+    background-size: 80%;
+}
+.overview-description{
+    color: grey;
+    padding: 20px 20px 20px 20px;
+    line-height: 22px;
+}
+.project-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+.project-description {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    margin-top: 50px;
+}
+.project-card {
+    width: 32%;
+    margin-left: 1%;
+    height: 170px;
+    border: 1px solid #ececec;
+    display: inline-block;
+} 
+.project-card:hover {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+
+}
+/*.project-container .col-md-3 {
+    background-color: red;
+    border: 1px solid #ececec;
+    margin-left: 40px;
+    margin-right: 20px;
+}*/
+.icon {
+    height: 70px;
+    width: 70px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.icon9 {
+    height: 70px;
+    width: 70px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../images/project-team.svg);
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.icon10 {
+    height: 70px;
+    width: 70px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../images/client.svg);
+
+}
+.icon11 {
+    height: 70px;
+    width: 70px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../images/given-time.svg);
+}
+
+.tech {
+    width: 16%;
+    height: 100px;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.techs {
+    width: 18%;
+    height: 100px;
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.html {
+    background: url(../images/html.svg) center no-repeat;
+    background-size: 40%;
+}
+
+.java {
+    background: url(../images/java.svg) center no-repeat;
+    background-size: 50%;
+}
+
+.js {
+    background: url(../images/js.png) center no-repeat;
+    background-size: 50%;
+}
+
+.swift {
+    background: url(../images/swift.svg) center no-repeat;
+    background-size: 40%;
+}
+
+.node {
+    background: url(../images/node.svg) center no-repeat;
+    background-size: 40%;
+}
+
+.react {
+    background: url(../images/react.svg) center no-repeat;
+    background-size: 60%;
+}
+.native {
+    background: url(../images/reactnative.svg) center no-repeat;
+    background-size: 60%;
+}
+
+.bootstrap {
+    background: url(../images/bootstrap.png) center no-repeat;
+    background-size: 40%;
+}
+
+.psql {
+    background: url(../images/psql.png) center no-repeat;
+    background-size: 40%;
+}
+
+.redis {
+    background: url(../images/redis.png) center no-repeat;
+    background-size: 80%;
+}
+
+.ec2 {
+    background: url(../images/ec2.png) center no-repeat;
+    background-size: 60%;
+}
+
+.elb {
+    background: url(../images/elb_logo.png) center no-repeat;
+    background-size: 80%;
+}
+
+.elasticache {
+    background: url(../images/elas.png) center no-repeat;
+    background-size: 100%;
+}
+
+.r53{
+    background: url(../images/route.png) center no-repeat;
+    background-size: 50%;
+}
+
+.rds {
+    background: url(../images/rds.png) center no-repeat;
+    background-size: 60%;
+}
+
+.angular {
+    background: url(../images/angular.svg) center no-repeat;
+    background-size: 40%;
+}
+
+.dynamo {
+    background: url(../images/dynamo.png) center no-repeat;
+    background-size: 50%;
+}
+
+.mongo {
+    background: url(../images/mongodb.png) center no-repeat;
+    background-size: 60%;
+}
+
+.cpp {
+    background: url(../images/c++.png) center no-repeat;
+    background-size: 40%;
+}
+
+.sqlite {
+    background: url(../images/sqlite.png) center no-repeat;
+    background-size: 40%;
+}
+
+.aiml {
+    background: url(../images/ai.png) center no-repeat;
+    background-size: 40%;
+}
+
+.quote-container {
+    background-color: #f2f3f7;
+    margin: auto;   
+    width: 100%;
+    max-width: 1170px;
+    position: relative;
+    line-height: 20px;
+}
+
+.quote-container .quote-description {
+    color: grey;
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+}
+
+.fa-quote-left {
+    color: #555;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 20px;
+}
+
+.fa-quote-right {
+    color: #555;
+    position: absolute;
+    bottom: 75px;
+    right: 15px;
+    font-size: 20px;
+}
+.person-description{
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.position-description{
+    text-align: center;
+    color: #555;
+    font-weight: thick;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .background {
+        height: 360px;
+    }
+    .left-background {
+        top: 30px;
+    }
+    #trymeet-container .right-background {
+        width: 477px;
+        right: 70px;
+    }
+    #yapapp-container .right-background {
+        width: 565px;
+        height: 94%;
+        right: 10px;
+    }
+    #vone-container .right-background {
+        width: 540px;
+        height: 90%;
+        right: 50px;
+    }
+    #kitkeys-container .right-background {
+        width: 585px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 769px) {
+
+    .background {
+        height: 320px;
+    }
+
+    .left-background {
+        top: 10px;
+        left: 3%;
+    }
+
+    #trymeet-container .right-background {
+        width: 430px;
+        right: 0;
+    }
+
+    #trymeet-container .background-logo {
+        background-size: 70%;
+    }
+
+    #yapapp-container .background-logo {
+        background-size: 50%;
+    }
+
+    #vone-container .background-logo {
+        background-size: 70%;
+    }
+
+    #kitkeys-container .background-logo {
+        background-size: 70%;
+    }
+
+    #yapapp-container .right-background {
+        width: 470px;
+        right: 10px;
+        height: 87%;
+    }
+
+    #vone-container .right-background {
+        width: 530px;
+        height: 100%;
+        right: 0;
+    }
+
+    #kitkeys-container .right-background {
+        width: 520px;
+        right: 0;
+    }
+     .project-description {
+        position: relative;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+ }
+
+ @media screen and  (max-width: 768px) {
+    .project-description {
+        position: relative;
+        width: 100%;
+    }
+    .project-card {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .cs-container {
+        height: 1000px;
+    }
+
+    .case-study {
+        width: 90%;
+        margin: auto;
+        position: relative;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .background {
+        height: 320px;
+    }
+
+    .left-background {
+        top: 0px;
+        height: 100%;
+        width: 60%;
+        left: 20%;
+     }
+
+    .right-background {
+        display: none;
+    }
+
+    .project {
+        width: 100%;
+        background-size: 40%;
+    }
+
+    .right {
+        border-right: none;
+    }
+
+    .bottom {
+        border-bottom: none;
+    }
+
+    .fa-google-play {
+        position: absolute;
+        right: 22%;
+    }
+    .fa-app-store-ios {
+        position: absolute;
+        left:22%;
+    }
+    #trymeet-container .background-logo {
+        background-size: 60%;
+    }
+    #yapapp-container .background-logo {
+        background-size: 60%;
+    }
+    #vone-container .background-logo {
+        background-size: 70%;
+    }
+    #kitkeys-container .background-logo {
+        background-size: 70%;
+    }
+    #kitkeys-container .fa-app-store-ios {
+        left: 41%;
+    }
+}
+
+ 
+@media only screen and (max-width: 991px) {
+    header .right-side {
+        width: 30px;
+    }
+
+    header .right-side > .menu-button {
+        width: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/navbar_icon.png);
+        background-size: 14px;
+        cursor: pointer;
+        float: left;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        width: 200px;
+        height: auto !important;
+        background-color: white;
+        top: 60px;
+        right: 0;
+    }
+
+    .nav-menu-item {
+        display: block;
+        width: 100%;
+        line-height: 30px;
+    }
+
+    .footer-about-us {
+        width: 100%;
+    }
+
+    footer .left-side, footer .right-side {
+        float: initial;
+    }
+
+    footer .social-icons-wrap {
+        display: none;
+    }
+
+    footer * {
+        text-align: center;
+    }
+
+}
+
+
+
+@media (max-width: 816px) {
+	.project-desc {
+		width: 100%;
+	}
+}
+
+/*optional classes*/
+.clickable {
+    cursor: pointer;
+}
+
+.selected-menu {
+    color: #ffb40c !important;
+    border-bottom: 2px solid #ffb40c;
+}
+
+/*animation*/
+.hidden {
+    opacity:0;
+}
+
+.my-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.console-container {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    color: white;
+    display: flex;
+    min-width: 350px;
+    line-height: 35px;
+    position: absolute;
+    padding: 30px 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-text-title{
+    /*text-align: center;*/
+    width: 100%;
+    color: #dfac00;
+    font-size: 25px !important;
+    padding-bottom: 10px;
+}
+
+.header-text {
+    color: #d8dde2;
+    font-size: 19px !important;
+}
+
+/*slideer*/
+.slide-wrap {
+    left: 0;
+    top: 0;
+    width: 1300px;
+    height: 380px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.slide-wrap > div {
+    width: 100%;
+    height: 380px;
+    background-size: cover;
+}
+
+/* jssor slider loading skin spin css */
+#slider1_container {
+    top: 0;
+    left: 0;
+    width: 1300px;
+    height: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.jssorl-009-spin > img {
+    top: 50%;
+    width: 38px;
+    height: 38px;
+    margin-top: -19px;
+    position: relative;
+}
+
+.jssorl-009-spin {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.jssora051 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    height: 55px;
+    width: 55px;
+}
+.jssora051 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 360;
+    stroke-miterlimit: 10;
+}
+.jssora051:hover {
+    opacity:.8;
+}
+.jssora051.jssora051dn {
+    opacity:.5;
+}
+.jssora051.jssora051ds {
+    opacity:.3;
+    pointer-events:none;
+}
+.jssora051 > svg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+@media (min-width: 992px) {
+    ul.nav-menu {
+        display: block !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .nav-menu-item {
+        padding-left: 15px;
+        font-size: 13px !important;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .fixed-navbar {
+        float: none !important;
+    }
+}
+
